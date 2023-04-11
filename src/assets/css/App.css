@@ -4,7 +4,8 @@
 
 #logo {
   height: 100px;
-  margin: 15px;
+  margin: auto;
+  margin-left: 1em;
   border-radius: 40px;
   border: solid pink 2px;
 }
@@ -12,10 +13,13 @@
 #name {
   font-size: 2em;
   font-family: "Courier New", Courier, monospace;
-  color: white;
-  margin: 1em;
-  padding: 0px;
+  color: rgb(91, 2, 91);
+  background-color: rgb(234, 204, 71);
+  margin: auto;
+  margin-left: 1em;
   text-align: center;
+  border-radius: 40px;
+  border: solid pink 2px;
 }
 
 ul {
@@ -66,6 +70,23 @@ ul {
   color: white;
   height: 15%;
   float: right;
+}
+
+#footlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 20%;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  width: 20%;
+  margin-top: 10%;
 }
 
 .App-link {
