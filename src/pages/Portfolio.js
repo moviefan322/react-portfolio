@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import awesomeQuiz from "../assets/images/awesomeQuiz.png";
 import contactCard from "../assets/images/contactCard.png";
 import dayPlanner from "../assets/images/dayPlanner.png";
@@ -38,7 +37,7 @@ const Portfolio = ({ projects }) => {
                   })`,
                 }}
               >
-                <h2>{project.name}</h2>
+                <h2 className="cardText">{project.name}</h2>
                 <p>{project.description}</p>
                 <a href={project.deployed}>Deployed</a>
                 <a href={project.github}>GitHub</a>
