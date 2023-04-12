@@ -72,7 +72,7 @@ const Header = () => {
                 ? { color: "yellow" }
                 : { color: "#FFFFFF" }
             }
-            onClick={() => handleLinkClick("Contact")}
+            onClick={() => handleLinkClick("Resume")}
           >
             Resume
           </Link>

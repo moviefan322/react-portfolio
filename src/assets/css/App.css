@@ -105,6 +105,21 @@ ul {
   width: 80%;
 }
 
+#resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
+
+#portrait {
+  height: 25%;
+  width: 25%;
+  margin: auto;
+  border: pink solid 2px;
+}
+
 #portfolio {
   text-align: center;
   display: flex;

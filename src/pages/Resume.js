@@ -1,11 +1,13 @@
-import React from 'react'
-import resume from '../assets/docs/Resume.pdf'
+import React from "react";
+import resume from "../assets/docs/Resume.pdf";
 
 const Resume = () => {
   return (
-    <div>
+    <div id="resume">
       <h1>Resume</h1>
-      <a href={resume}><h3>Download PDF</h3></a>
+      <a href={resume}>
+        <h3>Download PDF</h3>
+      </a>
 
       <h2>Skills:</h2>
       <ul>
@@ -34,7 +36,7 @@ const Resume = () => {
         <li>Agile Methodologies</li>
       </ul>
     </div>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
