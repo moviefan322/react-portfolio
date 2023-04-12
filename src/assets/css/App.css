@@ -190,10 +190,13 @@ ul {
   width: 2em;
   float: left;
   transition: all 0.2s ease-in-out;
+  border: solid black 1px;
 }
 
 .ghIcon:hover {
   transform: scale(2);
+  border: rgb(234, 204, 71) solid 3px;
+  border-radius: 40%;
 }
 
 @keyframes App-logo-spin {

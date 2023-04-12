@@ -14,7 +14,7 @@ const Portfolio = ({ projects }) => {
       <div className="project-container">
         {projects.map((project) => {
           return (
-            <div>
+            <div key={project.id}>
               <a
                 href={project.deployed}
                 target="_blank"
@@ -23,7 +23,7 @@ const Portfolio = ({ projects }) => {
               >
                 <section
                   className="actualCard"
-                  key={project.id}
+                  key={`${project.id}-${project.name}`}
                   style={{
                     backgroundImage: `url(${
                       project.name === "Awesome Quiz"
@@ -42,12 +42,18 @@ const Portfolio = ({ projects }) => {
                 >
                   <h2 className="cardText">{project.name}</h2>
                   <a
-                    className="ghIcon"
                     href={project.ghLink}
                     target="_blank"
                     rel="noreferrer"
+                    key={`${project.id}-${project.name}-ghLink`}
                   >
-                    <img src={gh} alt="GitHub Icon" height="25px" />
+                    <img
+                      className="ghIcon"
+                      src={gh}
+                      alt="GitHub Icon"
+                      height="25px"
+                      key={`${project.id}-${project.name}-ghIcon`}
+                    />
                   </a>
                 </section>
               </a>
