@@ -2,9 +2,13 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div id='contact'>
+    <div id="contact">
       <h1>Contact Me!</h1>
-      <form>
+      <form
+        id="contact-form"
+        method="post"
+        action="mailto:youremail@youremail.com"
+      >
         <div>
           <label htmlFor="name">Name:</label>
           <input type="text" name="name" />
