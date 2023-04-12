@@ -2,37 +2,49 @@
   {
     "id": "1",
     "name": "Burger",
-    "background-image": "logo.png",
-    "gh-link:": "https://github.com/moviefan322"
+    "image": "logo.png",
+    "github:": "https://github.com/moviefan322",
+    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+    "deployed": "https://burger-app-322.herokuapp.com/"
   },
   {
     "id": "2",
     "name": "Burger",
     "background-image": "logo.png",
-    "gh-link:": "https://github.com/moviefan322"
+    "gh-link:": "https://github.com/moviefan322",
+    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+    "deployed": "https://burger-app-322.herokuapp.com/"
   },
   {
     "id": "3",
     "name": "Burger",
     "background-image": "logo.png",
-    "gh-link:": "https://github.com/moviefan322"
+    "gh-link:": "https://github.com/moviefan322",
+    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+    "deployed": "https://burger-app-322.herokuapp.com/"
   },
   {
     "id": "4",
     "name": "Burger",
     "background-image": "logo.png",
-    "gh-link:": "https://github.com/moviefan322"
+    "gh-link:": "https://github.com/moviefan322",
+    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+    "deployed": "https://burger-app-322.herokuapp.com/"
   },
   {
     "id": "5",
     "name": "Burger",
     "background-image": "logo.png",
-    "gh-link:": "https://github.com/moviefan322"
+    "gh-link:": "https://github.com/moviefan322",
+    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+    "deployed": "https://burger-app-322.herokuapp.com/"
   },
   {
     "id": "6",
     "name": "Burger",
     "background-image": "logo.png",
-    "gh-link:": "https://github.com/moviefan322"
+    "gh-link:": "https://github.com/moviefan322",
+    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+    "deployed": "https://burger-app-322.herokuapp.com/"
   }
 ]

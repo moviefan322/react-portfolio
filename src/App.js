@@ -5,22 +5,20 @@ import Footer from "./components/Footer";
 import About from "./pages/About.js";
 import Portfolio from "./pages/Portfolio.js";
 import Contact from "./pages/Contact.js";
+import projects from "./assets/docs/projects.json";
 
 function App() {
   return (
     <Router>
-      <div>
+      <div className="page-wrapper">
         <Header />
         <Routes>
           <Route path="/" element={<About />} />
           <Route
             path="/portfolio"
-            element={<Portfolio />}
+            element={<Portfolio projects={projects} />}
           />
-          <Route
-            path="/contact"
-            element={<Contact />}
-          />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>

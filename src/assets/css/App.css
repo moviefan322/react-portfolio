@@ -1,3 +1,12 @@
+html,
+body {
+  height: 100%;
+}
+
+.page-wrapper {
+  min-height: calc(100vh - 100px); /* 100px is the height of the footer */
+}
+
 a:link {
   text-decoration: none;
   color: white;
@@ -87,14 +96,44 @@ ul {
 }
 
 #about,
-#contact,
-#portfolio {
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: auto;
   width: 20%;
   margin-top: 10%;
+}
+
+#portfolio {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+  margin-top: 10%;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(33.33% - 10px);
+  margin: 5px;
+  background-color: black;
+  color: white;
 }
 
 .App-link {
