@@ -1,5 +1,4 @@
 import logo from "../assets/images/logo.png";
-import resume from "../assets/docs/Resume.pdf";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
@@ -66,7 +65,17 @@ const Header = () => {
           >
             Contact
           </Link>
-          <a href={resume}>Resume</a>
+          <Link
+            to="/resume"
+            style={
+              currentPage === "Resume"
+                ? { color: "yellow" }
+                : { color: "#FFFFFF" }
+            }
+            onClick={() => handleLinkClick("Contact")}
+          >
+            Resume
+          </Link>
         </ul>
       </div>
     </nav>

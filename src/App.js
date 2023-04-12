@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import About from "./pages/About.js";
 import Portfolio from "./pages/Portfolio.js";
 import Contact from "./pages/Contact.js";
+import Resume from "./pages/Resume.js";
 import projects from "./assets/docs/projects.json";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             element={<Portfolio projects={projects} />}
           />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />
       </div>
