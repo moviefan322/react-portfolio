@@ -5,6 +5,7 @@ import dayPlanner from "../assets/images/dayPlanner.png";
 import loveHungry from "../assets/images/loveHungry.png";
 import techBlog from "../assets/images/techBlog.png";
 import weatherApp from "../assets/images/weatherApp.png";
+import gh from "../assets/images/gh.png";
 
 const Portfolio = ({ projects }) => {
   return (
@@ -13,36 +14,44 @@ const Portfolio = ({ projects }) => {
       <div className="project-container">
         {projects.map((project) => {
           return (
-            <a
-              href={project.deployed}
-              target="_blank"
-              rel="noreferrer"
-              className="project-card"
-            >
-              <section
-                key={project.id}
-                style={{
-                  backgroundImage: `url(${
-                    project.name === "Awesome Quiz"
-                      ? awesomeQuiz
-                      : project.name === "Contact Card"
-                      ? contactCard
-                      : project.name === "Day Planner"
-                      ? dayPlanner
-                      : project.name === "Love Hungry"
-                      ? loveHungry
-                      : project.name === "The Tech Blog"
-                      ? techBlog
-                      : weatherApp
-                  })`,
-                }}
+            <div>
+              <a
+                href={project.deployed}
+                target="_blank"
+                rel="noreferrer"
+                className="project-card"
               >
-                <h2 className="cardText">{project.name}</h2>
-                <p>{project.description}</p>
-                <a href={project.deployed}>Deployed</a>
-                <a href={project.github}>GitHub</a>
-              </section>
-            </a>
+                <section
+                  className="actualCard"
+                  key={project.id}
+                  style={{
+                    backgroundImage: `url(${
+                      project.name === "Awesome Quiz"
+                        ? awesomeQuiz
+                        : project.name === "Contact Card"
+                        ? contactCard
+                        : project.name === "Day Planner"
+                        ? dayPlanner
+                        : project.name === "Love Hungry"
+                        ? loveHungry
+                        : project.name === "The Tech Blog"
+                        ? techBlog
+                        : weatherApp
+                    })`,
+                  }}
+                >
+                  <h2 className="cardText">{project.name}</h2>
+                  <a
+                    className="ghIcon"
+                    href={project.ghLink}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img src={gh} alt="GitHub Icon" height="25px" />
+                  </a>
+                </section>
+              </a>
+            </div>
           );
         })}
       </div>
