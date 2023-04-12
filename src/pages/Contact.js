@@ -91,7 +91,9 @@ const Contact = () => {
         </div>
         <button type="submit">Submit</button>
       </form>
-      {response && <p>{response}</p>}
+      {response && (
+        <p style={{ color: "darkred", fontWeight: "bold" }}>{response}</p>
+      )}
     </div>
   );
 };
