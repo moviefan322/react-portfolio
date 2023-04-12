@@ -80,7 +80,9 @@ ul {
   width: 20%;
 }
 
-#about {
+#about,
+#contact,
+#portfolio {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
