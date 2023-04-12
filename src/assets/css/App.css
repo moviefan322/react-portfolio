@@ -15,23 +15,21 @@ a:visited {
 }
 
 #logo {
-  height: 100px;
-  margin: auto;
-  margin-left: 1em;
-  border-radius: 40px;
+  height: 8vh; /* use 5% of the viewport height */
+  border-radius: 40%; /* make it circular */
   border: solid pink 2px;
+  flex-shrink: 0; /* prevent it from shrinking */
 }
 
 #name {
-  font-size: 2em;
+  font-size: 2.5em;
   font-family: "Courier New", Courier, monospace;
   color: rgb(91, 2, 91);
   background-color: rgb(234, 204, 71);
-  margin: auto;
-  margin-left: 1em;
   text-align: center;
   border-radius: 40px;
   border: solid pink 2px;
+  padding: 0.1em;
 }
 
 ul {
@@ -49,23 +47,27 @@ ul {
 .App-header {
   background-color: #282c34;
   position: fixed;
-  top: 0px;
+  top: 0;
   display: flex;
   color: white;
   width: 100%;
-  height: 15%;
-  float: right;
-  align-items: right;
-  margin-bottom: 15vh;
+  height: 10vh; 
+  align-items: center; 
+  justify-content: space-between;
+  padding: 0 2rem; 
 }
 
 #navlinks {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  height: 100%;
-  margin: 3em 6em;
+  align-items: center;
+  width: 50%; 
+  margin-right: 5em;
+}
+
+#navlinks li {
+  margin: 0 1rem;
 }
 
 #body {
