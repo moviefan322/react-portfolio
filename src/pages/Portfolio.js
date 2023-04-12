@@ -1,5 +1,11 @@
 import React from "react";
-import logo from "../assets/images/logo.png";
+import { useState } from "react";
+import awesomeQuiz from "../assets/images/awesomeQuiz.png";
+import contactCard from "../assets/images/contactCard.png";
+import dayPlanner from "../assets/images/dayPlanner.png";
+import loveHungry from "../assets/images/loveHungry.png";
+import techBlog from "../assets/images/techBlog.png";
+import weatherApp from "../assets/images/weatherApp.png";
 
 const Portfolio = ({ projects }) => {
   return (
@@ -8,13 +14,36 @@ const Portfolio = ({ projects }) => {
       <div className="project-container">
         {projects.map((project) => {
           return (
-            <section className="project-card" key={project.id}>
-              <h2>{project.name}</h2>
-              <img src={logo} alt={project.name} height="50px" />
-              <p>{project.description}</p>
-              <a href={project.deployed}>Deployed</a>
-              <a href={project.github}>GitHub</a>
-            </section>
+            <a
+              href={project.deployed}
+              target="_blank"
+              rel="noreferrer"
+              className="project-card"
+            >
+              <section
+                key={project.id}
+                style={{
+                  backgroundImage: `url(${
+                    project.name === "Awesome Quiz"
+                      ? awesomeQuiz
+                      : project.name === "Contact Card"
+                      ? contactCard
+                      : project.name === "Day Planner"
+                      ? dayPlanner
+                      : project.name === "Love Hungry"
+                      ? loveHungry
+                      : project.name === "The Tech Blog"
+                      ? techBlog
+                      : weatherApp
+                  })`,
+                }}
+              >
+                <h2>{project.name}</h2>
+                <p>{project.description}</p>
+                <a href={project.deployed}>Deployed</a>
+                <a href={project.github}>GitHub</a>
+              </section>
+            </a>
           );
         })}
       </div>

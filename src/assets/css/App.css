@@ -51,10 +51,10 @@ ul {
   display: flex;
   color: white;
   width: 100%;
-  height: 10vh; 
-  align-items: center; 
+  height: 10vh;
+  align-items: center;
   justify-content: space-between;
-  padding: 0 2rem; 
+  padding: 0 2rem;
 }
 
 #navlinks {
@@ -62,7 +62,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 50%; 
+  width: 50%;
   margin-right: 5em;
 }
 
@@ -114,14 +114,21 @@ ul {
   width: 80%;
 }
 
+.project-card section {
+  margin-top: 0;
+  width: 30%;
+  height: 200px;
+  margin-right: 67%;
+}
+
 .project-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(auto, 1fr);
+  grid-gap: 10px;
   margin: auto;
   margin-top: 10%;
+  justify-content: center;
 }
 
 .project-card {
@@ -129,9 +136,8 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: calc(33.33% - 10px);
+  width: 300%;
   margin: 5px;
-  background-color: black;
   color: white;
   margin-bottom: 2em;
 }
