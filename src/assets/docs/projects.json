@@ -1,50 +1,50 @@
 [
   {
     "id": "1",
-    "name": "Burger",
-    "image": "logo.png",
-    "github:": "https://github.com/moviefan322",
-    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
-    "deployed": "https://burger-app-322.herokuapp.com/"
+    "name": "Love Hungry",
+    "image": "love-hungry.png",
+    "github:": "https://github.com/moviefan322/love-hungry",
+    "description": "A dating app based on what you want to eat tonight",
+    "deployed": "https://love-hungry.herokuapp.com/"
   },
   {
     "id": "2",
-    "name": "Burger",
-    "background-image": "logo.png",
-    "gh-link:": "https://github.com/moviefan322",
-    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
-    "deployed": "https://burger-app-322.herokuapp.com/"
+    "name": "The Tech Blog",
+    "background-image": "tech-blog.png",
+    "gh-link:": "https://github.com/moviefan322/e-blog",
+    "description": "An online forum to post about tech and other topics. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+    "deployed": "https://github.com/moviefan322/e-blog"
   },
   {
     "id": "3",
-    "name": "Burger",
-    "background-image": "logo.png",
-    "gh-link:": "https://github.com/moviefan322",
-    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
-    "deployed": "https://burger-app-322.herokuapp.com/"
+    "name": "Weather Forecast",
+    "background-image": "weather-app.png",
+    "gh-link:": "https://github.com/moviefan322/weather-app",
+    "description": "This is a weather app that uses the OpenWeather API to retrieve weather data for cities. It uses AJAX to hook into the API to retrieve data in JSON format. It uses localStorage to store any persistent data.",
+    "deployed": "https://moviefan322.github.io/weather-app/"
   },
   {
     "id": "4",
-    "name": "Burger",
-    "background-image": "logo.png",
-    "gh-link:": "https://github.com/moviefan322",
-    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
-    "deployed": "https://burger-app-322.herokuapp.com/"
+    "name": "Awesome Quiz",
+    "background-image": "awesome-quiz.png",
+    "gh-link:": "https://github.com/moviefan322/awesome-quiz",
+    "description": "Test your trvia knowledge with this nifty quiz.",
+    "deployed": "https://moviefan322.github.io/awesome-quiz/"
   },
   {
     "id": "5",
-    "name": "Burger",
-    "background-image": "logo.png",
-    "gh-link:": "https://github.com/moviefan322",
-    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
-    "deployed": "https://burger-app-322.herokuapp.com/"
+    "name": "Day Planer",
+    "background-image": "day-planner.png",
+    "gh-link:": "https://github.com/moviefan322/day-planner",
+    "description": "This is a simple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. It uses the Moment.js library to work with date and time.",
+    "deployed": "https://moviefan322.github.io/day-planner/"
   },
   {
     "id": "6",
-    "name": "Burger",
-    "background-image": "logo.png",
-    "gh-link:": "https://github.com/moviefan322",
-    "description": "This is a burger app that lets you create and devour burgers. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
-    "deployed": "https://burger-app-322.herokuapp.com/"
+    "name": "Contact Card",
+    "background-image": "contact-card.png",
+    "gh-link:": "https://github.com/moviefan322/contact-card",
+    "description": "This app helps you keep track of your contacts. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+    "deployed": "https://github.com/moviefan322/contact-card"
   }
 ]
