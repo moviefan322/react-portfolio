@@ -1,13 +1,24 @@
 import React from "react";
 import { useState } from "react";
+import { validateEmail } from "../utils/helpers";
 
 const Contact = () => {
-  const [message, setMessage] = useState({ name: "", email: "", message: "" });
+  const [message, setMessage] = useState({
+    sender: "",
+    email: "",
+    message: "",
+  });
   const [response, setResponse] = useState(null);
+  const [isEmailValid, setIsEmailValid] = useState(true);
 
   const handleSubmit = async (e) => {
-    console.log(message);
     e.preventDefault();
+
+    if (!isEmailValid) {
+      setResponse("Please enter a valid email address.");
+      return;
+    }
+
     try {
       const res = await fetch("https://mailthis.to/philman202@yahoo.com", {
         method: "POST",
@@ -17,7 +28,7 @@ const Contact = () => {
         body: JSON.stringify(message),
       });
 
-      await res;
+      console.log(res);
       setResponse("Your message has been sent!");
     } catch (err) {
       setResponse("Oops! There was an error. Please try again.");
@@ -27,6 +38,21 @@ const Contact = () => {
 
   const handleChange = (event) => {
     setMessage({ ...message, [event.target.name]: event.target.value }); // update the message state with the new input value
+
+    if (event.target.name === "email") {
+      setIsEmailValid(validateEmail(event.target.value));
+    }
+    if (!isEmailValid) {
+      setResponse("Please enter a valid email address.");
+    } else {
+      setResponse(null);
+    }
+  };
+
+  const getAngry = (event) => {
+    if (event.target.value === "") {
+      setResponse("All fields must be filled in.");
+    }
   };
 
   return (
@@ -34,12 +60,13 @@ const Contact = () => {
       <h1>Contact Me!</h1>
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="sender">Name:</label>
           <input
             type="text"
-            name="name"
+            name="sender"
             value={message.name}
             onChange={handleChange}
+            onMouseOut={getAngry}
           />
         </div>
         <div>
@@ -49,6 +76,7 @@ const Contact = () => {
             name="email"
             value={message.email}
             onChange={handleChange}
+            onMouseOut={getAngry}
           />
         </div>
         <div>
@@ -58,6 +86,7 @@ const Contact = () => {
             rows="5"
             value={message.message}
             onChange={handleChange}
+            onMouseOut={getAngry}
           />
         </div>
         <button type="submit">Submit</button>
