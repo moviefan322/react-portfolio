@@ -13,6 +13,18 @@ const Header = () => {
     setCurrentPage(page);
   };
 
+  useEffect(() => {
+    if (window.location.href.includes("portfolio")) {
+      setCurrentPage("Portfolio");
+    } else if (window.location.href.includes("contact")) {
+      setCurrentPage("Contact");
+    } else if (window.location.href.includes("resume")) {
+      setCurrentPage("Resume");
+    } else {
+      setCurrentPage("About");
+    }
+  }, []);
+
   return (
     <nav>
       <div className="App-header">
