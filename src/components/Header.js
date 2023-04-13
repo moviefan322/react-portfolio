@@ -4,9 +4,6 @@ import { useState, useEffect } from "react";
 
 const Header = () => {
   const [currentPage, setCurrentPage] = useState("About Me");
-  window.addEventListener("load", (event) => {
-    setCurrentPage("About Me");
-  });
 
   useEffect(() => {
     const storedPage = localStorage.getItem("currentPage");
