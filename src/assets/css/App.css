@@ -117,7 +117,8 @@ a:visited {
   flex-shrink: 0; /* prevent it from shrinking */
 }
 
-#name {
+#name,
+#portfolio h1 {
   font-size: 2.5em;
   font-family: "Courier New", Courier, monospace;
   color: rgb(91, 2, 91);
@@ -200,7 +201,9 @@ ul {
   flex-direction: column;
   justify-content: center;
   margin: auto;
+  margin-top: -5%;
   width: 80%;
+  text-align: center;
 }
 
 #portrait {
@@ -232,7 +235,6 @@ ul {
   grid-auto-rows: minmax(auto, 1fr);
   grid-gap: 10px;
   margin: auto;
-  margin-top: 10%;
   justify-content: center;
 }
 
