@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    if (window.location.href.includes("portfolio")) {
+    if (window.location.href.includes("myportfolio")) {
       setCurrentPage("Portfolio");
     } else if (window.location.href.includes("contact")) {
       setCurrentPage("Contact");
@@ -48,7 +48,7 @@ const Header = () => {
             About Me
           </Link>
           <Link
-            to="/portfolio"
+            to="/myportfolio"
             style={
               currentPage === "Portfolio"
                 ? { color: "yellow" }
