@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.fe35f5c6.css",
-    "main.js": "/react-portfolio/static/js/main.f11e59da.js",
+    "main.css": "/react-portfolio/static/css/main.7a68a2b3.css",
+    "main.js": "/react-portfolio/static/js/main.7b47bae8.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/portrait.png": "/react-portfolio/static/media/portrait.9757aecfa0923ad6a29a.png",
     "static/media/weatherApp.png": "/react-portfolio/static/media/weatherApp.8cb6d567f165697e4f60.png",
@@ -14,12 +14,12 @@
     "static/media/loveHungry.png": "/react-portfolio/static/media/loveHungry.eeef6a6d6fba8f918de3.png",
     "static/media/dayPlanner.png": "/react-portfolio/static/media/dayPlanner.2f4896949c991ec62154.png",
     "index.html": "/react-portfolio/index.html",
-    "main.fe35f5c6.css.map": "/react-portfolio/static/css/main.fe35f5c6.css.map",
-    "main.f11e59da.js.map": "/react-portfolio/static/js/main.f11e59da.js.map",
+    "main.7a68a2b3.css.map": "/react-portfolio/static/css/main.7a68a2b3.css.map",
+    "main.7b47bae8.js.map": "/react-portfolio/static/js/main.7b47bae8.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe35f5c6.css",
-    "static/js/main.f11e59da.js"
+    "static/css/main.7a68a2b3.css",
+    "static/js/main.7b47bae8.js"
   ]
 }
