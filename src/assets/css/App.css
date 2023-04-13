@@ -253,15 +253,6 @@ ul {
   margin-left: 2em;
 }
 
-.project-card a {
-  position: absolute;
-  top: 0;
-  left: 1%;
-  right: 0;
-  bottom: 0;
-  width: 31%;
-}
-
 a.project-card {
   position: relative;
   width: 300px;
@@ -273,10 +264,22 @@ a.project-card {
   margin-left: 50%;
 }
 
+.description {
+  color: rgb(91, 2, 91);
+  background-color: rgb(234, 204, 71);
+  border: black 2px solid;
+  visibility: hidden;
+  margin: 10%;
+}
+
 .actualCard:hover {
   background-color: rgb(234, 204, 71);
   color: black;
   border: solid pink 2px;
+}
+
+.actualCard:hover .description {
+  visibility: visible;
 }
 
 .cardText {
@@ -296,7 +299,7 @@ a.project-card {
 
 .ghIcon {
   position: relative;
-  bottom: -47%;
+  bottom: -55%;
   height: 2em;
   width: 2em;
   float: left;
@@ -308,6 +311,11 @@ a.project-card {
   transform: scale(2);
   border: rgb(234, 204, 71) solid 3px;
   border-radius: 40%;
+}
+
+.globe {
+  bottom: -55%;
+  float: right;
 }
 
 .page-wrapper {

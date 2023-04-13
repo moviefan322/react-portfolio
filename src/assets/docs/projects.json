@@ -12,7 +12,7 @@
     "name": "The Tech Blog",
     "backgroundImage": "techBlog",
     "ghLink": "https://github.com/moviefan322/e-blog",
-    "description": "An online forum to post about tech and other topics. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+    "description": "An online forum to post about tech.",
     "deployed": "https://github.com/moviefan322/e-blog"
   },
   {
@@ -20,7 +20,7 @@
     "name": "Weather Forecast",
     "backgroundImage": "weatherApp",
     "ghLink": "https://github.com/moviefan322/weather-app",
-    "description": "This is a weather app that uses the OpenWeather API to retrieve weather data for cities. It uses AJAX to hook into the API to retrieve data in JSON format. It uses localStorage to store any persistent data.",
+    "description": "This is a weather app that uses the OpenWeather API to retrieve weather data for cities.",
     "deployed": "https://moviefan322.github.io/weather-app/"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Day Planner",
     "backgroundImage": "dayPlanner",
     "ghLink": "https://github.com/moviefan322/day-planner",
-    "description": "This is a simple calendar application that allows a user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. It uses the Moment.js library to work with date and time.",
+    "description": "This is a simple calendar application that allows a user to save events for each hour of the day.",
     "deployed": "https://moviefan322.github.io/day-planner/"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Contact Card",
     "backgroundImage": "contactCard",
     "ghLink": "https://github.com/moviefan322/contact-card",
-    "description": "This app helps you keep track of your contacts. It uses MySQL, Node, Express, Handlebars and a homemade ORM. It follows the MVC design pattern; uses Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.",
+    "description": "This app helps you keep track of your contacts.",
     "deployed": "https://github.com/moviefan322/contact-card"
   }
 ]
