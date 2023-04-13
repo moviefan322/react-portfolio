@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Header = () => {
-  const [currentPage, setCurrentPage] = useState("About");
+  const [currentPage, setCurrentPage] = useState("");
 
   useEffect(() => {
     document.title = `${currentPage} | Philip Neumann}`;
