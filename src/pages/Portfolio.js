@@ -6,6 +6,7 @@ import loveHungry from "../assets/images/loveHungry.png";
 import techBlog from "../assets/images/techBlog.png";
 import weatherApp from "../assets/images/weatherApp.png";
 import gh from "../assets/images/gh.png";
+import { Link } from "react-router-dom";
 
 const Portfolio = ({ projects }) => {
   return (
@@ -15,8 +16,8 @@ const Portfolio = ({ projects }) => {
         {projects.map((project) => {
           return (
             <div key={project.id}>
-              <a
-                href={project.deployed}
+              <Link
+                to={project.deployed}
                 target="_blank"
                 rel="noreferrer"
                 className="project-card"
@@ -41,8 +42,8 @@ const Portfolio = ({ projects }) => {
                   }}
                 >
                   <h2 className="cardText">{project.name}</h2>
-                  <a
-                    href={project.ghLink}
+                  <Link
+                    to={project.ghLink}
                     target="_blank"
                     rel="noreferrer"
                     key={`${project.id}-${project.name}-ghLink`}
@@ -54,9 +55,9 @@ const Portfolio = ({ projects }) => {
                       height="25px"
                       key={`${project.id}-${project.name}-ghIcon`}
                     />
-                  </a>
+                  </Link>
                 </section>
-              </a>
+              </Link>
             </div>
           );
         })}

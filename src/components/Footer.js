@@ -4,13 +4,13 @@ const Footer = () => {
   return (
     <div className="App-footer">
       <ul id="footlinks">
-        <li>
+        <li className="footlink">
           <a href="https://github.com/moviefan322">Github</a>
         </li>
-        <li>
+        <li className="footlink">
           <a href="https://www.linkedin.com/in/phil-n-9b2334186/">LinkedIn</a>
         </li>
-        <li>
+        <li className="footlink">
           <a href="https://www.youtube.com/philipscottneumann">YouTube</a>
         </li>
       </ul>
