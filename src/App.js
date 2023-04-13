@@ -14,7 +14,7 @@ function App() {
       <div className="page-wrapper">
         <Header />
         <Routes>
-          <Route path="/" element={<About />} />
+          <Route path="/" element={<About />} initial={true} />
           <Route
             path="/portfolio"
             element={<Portfolio projects={projects} />}
