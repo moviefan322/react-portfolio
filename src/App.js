@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "./assets/css/App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header.js";
@@ -9,12 +10,22 @@ import Resume from "./pages/Resume.js";
 import projects from "./assets/docs/projects.json";
 
 function App() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
+  if (!loaded) {
+    return null;
+  }
   return (
     <Router>
       <div className="page-wrapper">
         <Header />
         <Routes>
           <Route path="/" element={<About />} />
+          <Route path="/react-portfolio" element={<About />} />
           <Route
             path="/portfolio"
             element={<Portfolio projects={projects} />}
