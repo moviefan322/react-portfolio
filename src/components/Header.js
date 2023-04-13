@@ -3,14 +3,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Header = () => {
-  const [currentPage, setCurrentPage] = useState("About Me");
-
-  useEffect(() => {
-    const storedPage = localStorage.getItem("currentPage");
-    if (storedPage) {
-      setCurrentPage(storedPage);
-    }
-  }, [currentPage]);
+  const [currentPage, setCurrentPage] = useState("About");
 
   useEffect(() => {
     document.title = `${currentPage} | Philip Neumann}`;
@@ -18,7 +11,6 @@ const Header = () => {
 
   const handleLinkClick = (page) => {
     setCurrentPage(page);
-    localStorage.setItem("currentPage", page);
   };
 
   return (
