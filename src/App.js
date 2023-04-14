@@ -1,5 +1,5 @@
 import "./assets/css/App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header.js";
 import Footer from "./components/Footer";
 import About from "./pages/About.js";
@@ -14,14 +14,14 @@ function App() {
       <div className="page-wrapper">
         <Header />
         <Routes>
-          <Route path="/react-portfolio/About" element={<About />} />
+          <Route path="/" element={<About />} />
           <Route path="/react-portfolio" element={<About />} />
           <Route
             path="/myportfolio"
             element={<Portfolio projects={projects} />}
           />
-          <Route path="/react-portfolio/contact" element={<Contact />} />
-          <Route path="/react-portfolio/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="*" element={<About />} />
         </Routes>
         <Footer />
