@@ -6,7 +6,7 @@ const Header = () => {
   const [currentPage, setCurrentPage] = useState("");
 
   useEffect(() => {
-    document.title = `${currentPage} | Philip Neumann}`;
+    document.title = `${currentPage} | Philip Neumann`;
   }, [currentPage]);
 
   const handleLinkClick = (page) => {
