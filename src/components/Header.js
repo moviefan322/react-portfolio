@@ -37,7 +37,7 @@ const Header = () => {
         <h1 id="name">Philip Neumann</h1>
         <ul id="navlinks">
           <Link
-            to="/"
+            to="/react-portfolio/About"
             style={
               currentPage === "About"
                 ? { color: "yellow" }
@@ -48,7 +48,7 @@ const Header = () => {
             About Me
           </Link>
           <Link
-            to="/myportfolio"
+            to="/react-portfolio/myportfolio"
             style={
               currentPage === "Portfolio"
                 ? { color: "yellow" }
@@ -59,7 +59,7 @@ const Header = () => {
             Portfolio
           </Link>
           <Link
-            to="/contact"
+            to="/react-portfolio/contact"
             style={
               currentPage === "Contact"
                 ? { color: "yellow" }
@@ -70,7 +70,7 @@ const Header = () => {
             Contact
           </Link>
           <Link
-            to="/resume"
+            to="/react-portfolio/resume"
             style={
               currentPage === "Resume"
                 ? { color: "yellow" }
@@ -91,7 +91,7 @@ const Header = () => {
         <ul className="menu__box">
           <li>
             <Link
-              to="/"
+              to="/react-portfolio/About"
               style={
                 currentPage === "About"
                   ? { color: "yellow" }
@@ -105,7 +105,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/myportfolio"
+              to="/react-portfolio/myportfolio"
               style={
                 currentPage === "Portfolio"
                   ? { color: "yellow" }
@@ -119,7 +119,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/contact"
+              to="/react-portfolio/contact"
               style={
                 currentPage === "Contact"
                   ? { color: "yellow" }
@@ -133,7 +133,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/resume"
+              to="/react-portfolio/resume"
               style={
                 currentPage === "Resume"
                   ? { color: "yellow" }

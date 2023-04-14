@@ -14,15 +14,15 @@ function App() {
       <div className="page-wrapper">
         <Header />
         <Routes>
-          <Route path="*" element={<About />} />
-          <Route path="/" element={<About />} />
+          <Route path="/react-portfolio/About" element={<About />} />
           <Route path="/react-portfolio" element={<About />} />
           <Route
             path="/myportfolio"
             element={<Portfolio projects={projects} />}
           />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/react-portfolio/contact" element={<Contact />} />
+          <Route path="/react-portfolio/resume" element={<Resume />} />
+          <Route path="*" element={<About />} />
         </Routes>
         <Footer />
       </div>
