@@ -105,7 +105,7 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to="/portfolio"
+              to="/myportfolio"
               style={
                 currentPage === "Portfolio"
                   ? { color: "yellow" }
